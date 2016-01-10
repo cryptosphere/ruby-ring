@@ -6,6 +6,16 @@ before_script:
       curl -s https://static.rust-lang.org/rustup.sh | sh -s -- -y --disable-sudo --prefix=$HOME/.local
       export LD_LIBRARY_PATH=$HOME/.local/lib
       export PATH=$HOME/.local/bin:$PATH
+      export CC=gcc-4.8
+      export CXX=g++-4.8
+
+addons:
+  apt:
+    packages:
+      - g++-4.8
+      - gcc-4.8
+    sources:
+      - ubuntu-toolchain-r-test
 
 rvm:
   - 2.0.0
