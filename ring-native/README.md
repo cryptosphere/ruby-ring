@@ -1,7 +1,6 @@
 ring-native
 ===========
 [![Gem Version](https://badge.fury.io/rb/ring-native.png)](http://badge.fury.io/rb/ring-native)
-https://img.shields.io/badge/license-OpenSSL-blue.svg
 [![OpenSSL licensed](https://img.shields.io/badge/license-OpenSSL-blue.svg)](https://github.com/briansmith/ring/blob/master/LICENSE)
 
 The [*ring* cryptography library][ring] packaged as a RubyGem. Since *ring* has
