@@ -6,4 +6,10 @@ RSpec::Core::RakeTask.new(:spec)
 
 RuboCop::RakeTask.new
 
-task default: %w(spec rubocop)
+task :compile do
+  Dir.chdir("ring-native") do
+    system "rake compile"
+  end
+end
+
+task default: %w(compile spec rubocop)

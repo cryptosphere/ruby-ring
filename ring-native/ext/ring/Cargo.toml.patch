@@ -1,0 +1,12 @@
+diff --git a/Cargo.toml b/Cargo.toml
+index c72edc4..546b42e 100644
+--- a/Cargo.toml
++++ b/Cargo.toml
+@@ -10,6 +10,7 @@ version = "0.1.0"
+ 
+ [lib]
+ name = "ring"
++crate-type = ["dylib"]
+ 
+ [build-dependencies]
+ num = "0.1.27"
