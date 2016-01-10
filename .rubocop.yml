@@ -1,0 +1,20 @@
+#
+# Style
+#
+
+Style/StringLiterals:
+  EnforcedStyle: double_quotes
+
+Style/SingleSpaceBeforeFirstArg:
+  Enabled: false
+
+#
+# Metrics
+#
+
+Metrics/LineLength:
+  Max: 100
+
+Metrics/MethodLength:
+  CountComments: false
+  Max: 25

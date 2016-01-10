@@ -3,7 +3,9 @@ require "ring/native"
 
 require "ffi"
 
+# The *ring* cryptography library
 module Ring
+  # Native library binding
   module Native
     extend FFI::Library
 

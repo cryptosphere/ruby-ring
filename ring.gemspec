@@ -1,7 +1,7 @@
 # coding: utf-8
-lib = File.expand_path('../lib', __FILE__)
+lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'ring/version'
+require "ring/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "ring"
@@ -13,7 +13,10 @@ Gem::Specification.new do |spec|
   spec.description   = "A binding to the *ring* cryptography, a fork of BoringSSL"
   spec.homepage      = "https://github.com/cryptosphere/ruby-ring"
 
-  spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features|ruby-native)/}) }
+  spec.files         = `git ls-files -z`.split("\x0").reject do |f|
+    f.match(%r{^(test|spec|features|ring-native)/})
+  end
+
   spec.require_paths = ["lib"]
 
   spec.add_runtime_dependency "ffi"

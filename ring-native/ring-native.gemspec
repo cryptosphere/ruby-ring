@@ -1,7 +1,7 @@
 # coding: utf-8
-lib = File.expand_path('../lib', __FILE__)
+lib = File.expand_path("../lib", __FILE__)
 $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
-require 'ring/native/version'
+require "ring/native/version"
 
 Gem::Specification.new do |spec|
   spec.name          = "ring-native"
@@ -15,7 +15,7 @@ Gem::Specification.new do |spec|
   spec.license       = "OpenSSL"
 
   spec.files         = `git ls-files -z`.split("\x0")
-  spec.files         += Dir.glob("vendor/ring/**/*")
+  spec.files += Dir.glob("vendor/ring/**/*")
   spec.require_paths = ["lib"]
 
   spec.extensions    = ["ext/ring/extconf.rb"]

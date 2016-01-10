@@ -2,10 +2,9 @@ require "fileutils"
 
 def sys(cmd)
   puts " -- #{cmd}"
-  unless ret = system(cmd)
-    raise "ERROR: '#{cmd}' failed"
+  system(cmd).tap do |ret|
+    fail "ERROR: '#{cmd}' failed" unless ret
   end
-  ret
 end
 
 ring_src = File.expand_path("../../../vendor/ring", __FILE__)
