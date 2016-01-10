@@ -3,7 +3,7 @@ sudo: false
 
 before_script:
   - |
-      curl -s https://static.rust-lang.org/rustup.sh | sh -s -- -y --prefix=$HOME/.local
+      curl -s https://static.rust-lang.org/rustup.sh | sh -s -- -y --disable-sudo --prefix=$HOME/.local
       export PATH=$HOME/.local/bin:$PATH
 
 rvm:
