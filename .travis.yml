@@ -4,6 +4,7 @@ sudo: false
 before_script:
   - |
       curl -s https://static.rust-lang.org/rustup.sh | sh -s -- -y --disable-sudo --prefix=$HOME/.local
+      export LD_LIBRARY_PATH=$HOME/.local/lib
       export PATH=$HOME/.local/bin:$PATH
 
 rvm:
