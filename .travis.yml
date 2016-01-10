@@ -1,12 +1,18 @@
 language: ruby
 sudo: false
 
+before_script:
+  - |
+      curl -s https://static.rust-lang.org/rustup.sh | sh -s -- --prefix=$HOME/.local
+      export PATH=$HOME/.local/bin:$PATH
+
 rvm:
   - 2.0.0
   - 2.1.8
   - 2.2.4
   - 2.3.0
   - jruby-9.0.4.0
+
 matrix:
   fast_finish: true
 
