@@ -1,3 +1,3 @@
-[submodule "ring-native/vendor/ring"]
-	path = ring-native/vendor/ring
-	url = https://github.com/briansmith/ring.git
+[submodule "ring-native/vendor/ring-ffi"]
+	path = ring-native/vendor/ring-ffi
+	url = https://github.com/briansmith/ring-ffi

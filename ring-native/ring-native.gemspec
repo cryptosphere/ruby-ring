@@ -10,14 +10,14 @@ Gem::Specification.new do |spec|
   spec.email         = ["bascule@gmail.com"]
 
   spec.summary       = "The *ring* cryptography library, packaged as a RubyGem"
-  spec.description   = "Snapshots of the *ring* cryptography library, packaged in RubyGem format"
+  spec.description   = "Snapshots of the *ring* cryptography library (ring-ffi) packages as gems"
   spec.homepage      = "https://github.com/cryptosphere/ruby-ring"
   spec.license       = "OpenSSL"
 
   spec.files         = `git ls-files -z`.split("\x0")
-  spec.files += Dir.glob("vendor/ring/**/*")
-  spec.require_paths = ["lib"]
+  spec.files        += Dir.glob("vendor/ring-ffi/**/*")
 
+  spec.require_paths = ["lib"]
   spec.extensions    = ["ext/ring/extconf.rb"]
 
   spec.add_development_dependency "bundler", "~> 1.11"
