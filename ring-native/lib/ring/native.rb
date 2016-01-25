@@ -4,7 +4,7 @@ require "ring/native/version"
 module Ring
   # Native library binding
   module Native
-    filename = RUBY_DESCRIPTION[/darwin/] ? "libring.dylib" : "libring.so"
+    filename = RUBY_DESCRIPTION[/darwin/] ? "libringffi.dylib" : "libringffi.so"
     LIB_PATH = File.expand_path("../native/#{filename}", __FILE__)
   end
 end
